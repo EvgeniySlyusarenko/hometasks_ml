@@ -16,11 +16,11 @@ def next_f(x, l):
 
 def dihot(x, a, b, e):
     while(b - a) > e:
-        if (next_f(x, a + (b - a) / 2) > next_f(x, a + 2 * (b - a) / 2)):
-            a += (b - a) / 2
+        if (next_f(x, a + (b - a) / 3) > next_f(x, a + 2 * (b - a) / 3)):
+            a += (b - a) / 3
         else:
-            b = a + 2 * (b - a) / 2
-    return (a + b) / 2
+            b = a + 2 * (b - a) / 3
+    return (a + b) / 3
 
 def downhill(x, e):
     a = 0
